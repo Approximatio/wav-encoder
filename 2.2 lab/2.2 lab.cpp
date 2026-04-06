@@ -246,7 +246,6 @@ int main(int argc, char* argv[])
     }
 
     SetCursorBlinking(false);
-
     ReadBytes(command, file, filePath);
 
     return 0;
