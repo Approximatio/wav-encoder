@@ -249,7 +249,5 @@ int main(int argc, char* argv[])
     
     ReadBytes(command, file, filePath);
 
-    cout << "Good code" << endl;
-
     return 0;
 }
