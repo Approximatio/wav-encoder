@@ -249,5 +249,7 @@ int main(int argc, char* argv[])
     
     ReadBytes(command, file, filePath);
 
+    cout << "This code is disgusting" << endl;
+
     return 0;
 }
