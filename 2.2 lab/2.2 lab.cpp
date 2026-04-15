@@ -226,7 +226,22 @@ int main(int argc, char* argv[])
     if (argc < 2)
         GetCommand(command);
     else
+    {
         command = argv[1];
+        if (command != "-e" && command != "-encode" && command != "-d" && command != "-decode")
+        {
+            cerr << "I don't know this command!" << endl;
+            while (true)
+            {
+                cout << "Enter command: ";
+                getline(cin, command);
+                if (command != "-e" && command != "-encode" && command != "-d" && command != "-decode")
+                    cerr << "I don't know this command!" << endl;
+                else
+                    break;
+            }
+        }
+    }
 
     string filePath = "Password.txt";
     ifstream file;
